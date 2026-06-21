@@ -14,23 +14,23 @@
 CineFind utilizes a unified Monorepo topology. While components remain entirely decoupled during development, they merge seamlessly into a single high-performance engine for production deployments.
 
 ```text
-movie-discovery-app/
+Movie App/
 ├── README.md
-├── backend/                  # Python API Domain
+├── backend/
 │   ├── app/
-│   │   ├── __init__.py
-│   │   ├── main.py           # Engine initialization & app.frontend routing
-│   │   └── data.py           # Mock Movie Repository
-│   ├── requirements.txt      # Dependency manifest
-│   └── .env.example          # Environment blueprint
+│   │   ├── routes/
+│   │   ├── main.py
+│   │   └── database.py
+│   ├── requirements.txt
+│   └── .env.example
 │
-└── frontend/                 # React UI Domain
+└── frontend/
     ├── src/
-    │   ├── api/
-    │   │   └── client.js     # Unified dynamic API client
-    │   ├── components/       # Reusable UI Atoms (Cards, Navbar)
-    │   ├── App.jsx           # Main App & Router configuration
-    │   └── main.jsx
-    ├── index.html
+    │   ├── routes/
+    │   ├── components/
+    │   ├── router.tsx
+    │   └── start.tsx
     ├── vite.config.js        # Build configuration mapping to /dist
     └── package.json
+
+    
