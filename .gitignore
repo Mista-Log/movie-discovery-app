@@ -1,0 +1,75 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Mypy
+.mypy_cache/
+
+# Ruff
+.ruff_cache/
+
+# =========================
+# FastAPI / Alembic
+# =========================
+alembic/versions/*.pyc
+
+# SQLite (if used during development)
+*.db
+*.sqlite3
+
+# =========================
+# React / Vite
+# =========================
+node_modules/
+dist/
+.vite/
+
+# Build outputs
+build/
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Testing
+# =========================
+.pytest_cache/
+coverage.xml
+
+# =========================
+# Misc
+# =========================
+*.swp
+*.swo
