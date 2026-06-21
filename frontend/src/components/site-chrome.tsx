@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useAuth } from "@/lib/auth";
 
 export function SiteHeader() {
@@ -22,9 +22,7 @@ export function SiteHeader() {
         </nav>
         {user ? (
           <div className="flex items-center gap-4 text-xs uppercase tracking-[0.2em]">
-            <span className="hidden text-muted-foreground sm:inline">
-              {user.email}
-            </span>
+            <span className="hidden text-muted-foreground sm:inline">{user.email}</span>
             <button
               onClick={signOut}
               className="text-foreground underline-offset-4 hover:underline"

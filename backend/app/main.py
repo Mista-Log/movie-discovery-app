@@ -3,6 +3,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routes import api_router
 
 
+from pathlib import Path
+
+FRONTEND_DIR = Path(__file__).parent.parent.parent / "frontend" / "dist"
+
+
+print(FRONTEND_DIR)
+print(FRONTEND_DIR.exists())
+
+
 app = FastAPI(
     title="CineFind API",
     version="1.0.0"
@@ -24,3 +33,8 @@ app.add_middleware(
 
 
 app.include_router(api_router, prefix="/api/v1")
+
+app.frontend(
+    path="/",
+    directory=str(FRONTEND_DIR),
+)

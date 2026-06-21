@@ -1,5 +1,5 @@
 import { type ReactNode } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 
 export function AuthShell({
