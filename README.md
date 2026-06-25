@@ -5,13 +5,13 @@
 [![Vite](https://img.shields.io/badge/Vite-B738CF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-**CineFind** is a sleek, modern Movie Discovery platform designed to demonstrate the cutting-edge single-origin paradigm. Leveraging **FastAPI's native `app.frontend()` feature**, this architecture eliminates complex reverse proxy setups (like Nginx) in staging environments by allowing Python to natively serve compiled Single Page Applications (SPAs) with absolute zero-config client-side routing fallbacks.
+**Screen Dive** is a sleek, modern Movie Discovery platform designed to demonstrate the cutting-edge single-origin paradigm. Leveraging **FastAPI's native `app.frontend()` feature**, this architecture eliminates complex reverse proxy setups (like Nginx) in staging environments by allowing Python to natively serve compiled Single Page Applications (SPAs) with absolute zero-config client-side routing fallbacks.
 
 ---
 
 ## 🗺️ System Architecture
 
-CineFind utilizes a unified Monorepo topology. While components remain entirely decoupled during development, they merge seamlessly into a single high-performance engine for production deployments.
+Screen Dive utilizes a unified Monorepo topology. While components remain entirely decoupled during development, they merge seamlessly into a single high-performance engine for production deployments.
 
 ```text
 Movie App/
