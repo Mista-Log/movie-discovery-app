@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes import api_router
+from routes import api_router
+from database import Base, engine
+
+from models.user import User
 
 
 from pathlib import Path
@@ -8,12 +11,18 @@ from pathlib import Path
 FRONTEND_DIR = Path(__file__).parent.parent.parent / "frontend" / "dist"
 
 
+
+
+Base.metadata.create_all(bind=engine)
+
+
 print(FRONTEND_DIR)
 print(FRONTEND_DIR.exists())
 
 
 app = FastAPI(
-    title="CineFind API",
+    title="ScreenDive API",
+    description="Movie discovery and recommendation platform",
     version="1.0.0"
 )
 
