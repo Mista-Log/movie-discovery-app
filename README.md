@@ -1,4 +1,4 @@
-# 🎬 CineFind — Modern Movie Discovery App
+# 🎬 Screen Dive — Modern Movie Discovery App
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
